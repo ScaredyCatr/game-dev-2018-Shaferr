@@ -1,4 +1,4 @@
-<input type=text id="myText01" value=3000>
+<input type=text id="myText01" value=3>
 <input type=button value="run for loop" onclick="{
 
  document.getElementById('myDiv01').innerHTML = ''
@@ -13,3 +13,16 @@ for (let x=0; x < document.getElementById('myText01').value;     x++){
 }">
 
 <div id="myDiv01">...</div>
+
+<input type=button value="run negative for loop" onclick="{
+
+ document.getElementById('myDiv01').innerHTML = ''
+
+
+for (let x = document.getElementById('myText01').value; x > 0 ;  x--){
+ document.getElementById('myDiv01').innerHTML +=  `x is ` + x +  `<br>`
+
+}
+   
+   
+}">
