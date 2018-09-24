@@ -9,11 +9,13 @@ for (let x=0;  x < document.getElementById('myText01').value;   x++){
 
       document.getElementById('myDiv01').innerHTML +=
          `<font color=green>Even number, </font>`
+} else {
+
+ document.getElementById('myDiv01').innerHTML +=
+         `<font color=red>Odd number, </font>`
 }
 
 document.getElementById('myDiv01').innerHTML +=  `x is ` + x +  `<br>`
-
-}
 
 }
 
