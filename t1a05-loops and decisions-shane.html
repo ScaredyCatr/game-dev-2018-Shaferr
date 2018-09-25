@@ -1,9 +1,9 @@
-<input type=text id="myText01" value=51>
+<input type=text id="myText01" value=41>
 <input type=button value="run for loop" onclick="{
  
 document.getElementById('myDiv01').innerHTML = ''
 
-for (let x=0;  x < document.getElementById('myText01').value;   x++){
+for (let x=-11;  x < document.getElementById('myText01').value;   x++){
 
  if (x % 2 == 0) {
 
@@ -28,8 +28,15 @@ for (let x=0;  x < document.getElementById('myText01').value;   x++){
       document.getElementById('myDiv01').innerHTML +=
          `<font color=Purple>, Greater than or equal to 27 </font>`
 
-}
+} if (x < 5) {
+      document.getElementById('myDiv01').innerHTML +=
+         `<font color=Orey>, Less than 5  </font>`
 
+} if (( x > -10) && (x < 4 )) {
+      document.getElementById('myDiv01').innerHTML +=
+         `<font color=grey>, Greater than -4, less than 4 </font>`
+
+}
 
 document.getElementById('myDiv01').innerHTML +=  `x is ` + x +  `<br>`
 
