@@ -3,7 +3,7 @@
  
 document.getElementById('myDiv01').innerHTML = ''
 
-for (let x=-11;  x < document.getElementById('myText01').value;   x++){
+for (let x=-10;  x < document.getElementById('myText01').value;   x++){
 
  if (x % 2 == 0) {
 
@@ -36,6 +36,9 @@ for (let x=-11;  x < document.getElementById('myText01').value;   x++){
       document.getElementById('myDiv01').innerHTML +=
          `<font color=grey>, Greater than -4, less than 4 </font>`
 
+} if (( x % 2 == 0) && (x % 4 == 0 )) {
+      document.getElementById('myDiv01').innerHTML +=
+         `<font color=Tyrian>, Divisible by 2, and divisible by 4 </font>`
 }
 
 document.getElementById('myDiv01').innerHTML +=  `x is ` + x +  `<br>`
