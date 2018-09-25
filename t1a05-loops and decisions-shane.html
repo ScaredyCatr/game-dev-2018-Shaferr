@@ -1,4 +1,4 @@
-<input type=text id="myText01" value=15>
+<input type=text id="myText01" value=51>
 <input type=button value="run for loop" onclick="{
  
 document.getElementById('myDiv01').innerHTML = ''
@@ -13,11 +13,25 @@ for (let x=0;  x < document.getElementById('myText01').value;   x++){
 
  document.getElementById('myDiv01').innerHTML +=
          `<font color=red>Odd number, </font>`
+
+
+} if (x % 5 == 0) {
+      document.getElementById('myDiv01').innerHTML +=
+         `<font color=orange>Divisible by 5, </font>`
+
+
+} if ((x > 8) && (x < 38)) {
+      document.getElementById('myDiv01').innerHTML +=
+         `<font color=Orane>, Greater than 8, less than 38 </font>`
+
 }
 
 document.getElementById('myDiv01').innerHTML +=  `x is ` + x +  `<br>`
 
 }
+
+
+
 
 }">
 
