@@ -1,0 +1,20 @@
+<h2 align=center> Functions by Shane
+
+<br>
+
+<input type=text id="myText01" value=3>
+
+
+<input type=button value="Run Function myFun" 
+onclick="{
+  
+function myFun(){
+document.getElementById('myDiv01').innerHTML = `<document.getElementById('myText01').value> x <document.getElementById('myText01').value> = ` +
+    document.getElementById('myText01').value *
+     document.getElementById('myText01').value
+}
+
+myFun()
+ 
+}">
+<div id="myDiv01">...</div>
