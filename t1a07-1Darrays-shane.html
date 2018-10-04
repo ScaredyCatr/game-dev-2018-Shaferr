@@ -4,17 +4,23 @@
 <input type=button value="1D Array" onclick="{
    myProgramTerms = [] // creates an array
   
-   myProgramTerms[0] = `variables`
-   myProgramTerms[1] = `decisions`
-   myProgramTerms[2] = `for loops`
-     document.getElementById('myDiv01').innerHTML += ``
-   for (let myLoop=0; myLoop < 3; myLoop++ ){
+   myProgramTerms[0] = `Variables`
+   myProgramTerms[1] = `Decisions`
+   myProgramTerms[2] = `For loops`
+   myProgramTerms[3] = `Decisions`
+   myProgramTerms[4] = `Input/Output`
+   myProgramTerms[5] = `Arrays`
+   myProgramTerms[6] = `Functions`
+   myProgramTerms[7] = `Classes`
+   myProgramTerms[8] = `Objects`
+     document.getElementById('myDiv01').innerHTML =``
+   for (let myLoop=0;  myLoop < 9; myLoop++ ){
     document.getElementById('myDiv01').innerHTML += myLoop + `:`+
       myProgramTerms[myLoop]+`<br>`
   }
- 
-   document.getElementById('myDiv01').innerHTML = ``
-             myProgramTerms[0] + myProgramTerms[1] + myProgramTerms[2]
+             myProgramTerms[0] + myProgramTerms[1] + myProgramTerms[2] + myProgramTerms[3] + myProgramTerms[4]
++ myProgramTerms[5] + myProgramTerms[6] + myProgramTerms[7] + myProgramTerms[8]
+
       document.getElementById('myText01').value
 
 }">
