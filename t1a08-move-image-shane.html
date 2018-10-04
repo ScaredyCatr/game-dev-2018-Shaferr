@@ -31,11 +31,18 @@ function checkKey(myEvent) {
    document.getElementById('myDiv01').innerHTML = 'seconds: ' + myDuration +
 ', keyCode: '+myEvent.keyCode
 
-   if (myHitOther('myImage01','myImage02')){
-       alert(Ghost Wins!)
+ 
+if (myDuration == 60){
+    alert("Pacman Wins!")
 
 }
 
+  
+
+if (myHitOther('myImage01','myImage02')){
+       alert("Ghost Wins!")
+
+}
 
   
 if (myEvent.keyCode == 38){ document.getElementById('myImage01').style.top = 
