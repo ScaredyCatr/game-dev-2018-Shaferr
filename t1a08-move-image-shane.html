@@ -30,47 +30,65 @@ function checkKey(myEvent) {
    document.getElementById('myDiv01').innerHTML = 'seconds: ' + myDuration +
 ', keyCode: '+myEvent.keyCode
  
+
 if (myDuration == 60){
     alert("Pacman Wins!")
 }
   
+
 if (myHitOther('myImage01','myImage02')){
        alert("Ghost Wins!")
 }
   
+
 if (myEvent.keyCode == 38){ document.getElementById('myImage01').style.top = 
        parseInt(document.getElementById('myImage01').style.top) - 5 + 'px'
           document.getElementById('myImage01').style.transform= 'rotate(90deg)'  
 }  //up arrow = 38
+
+
 if (myEvent.keyCode == 37){ document.getElementById('myImage01').style.left = 
       parseInt(document.getElementById('myImage01').style.left) - 5 + 'px' 
           document.getElementById('myImage01').style.transform= 'rotate(0deg)'
 }  // left arrow= 37
+
+
 if (myEvent.keyCode == 40){ document.getElementById('myImage01').style.top = 
     parseInt(document.getElementById('myImage01').style.top) + 5 + 'px' 
           document.getElementById('myImage01').style.transform= 'rotate(-90deg)'
 }  //down arrow 40
      
+
 if (myEvent.keyCode == 39){ document.getElementById('myImage01').style.left = 
     parseInt(document.getElementById('myImage01').style.left) + 5 + 'px'
        document.getElementById('myImage01').style.transform= 'rotate(180deg)'
 }  //right arrow= 39
+
+
 if (myEvent.keyCode == 87){ document.getElementById('myImage02').style.top = 
     parseInt(document.getElementById('myImage02').style.top) - 5 + 'px' 
     document.getElementById('myImage02').style.transform= 'rotate(-90deg)'
 }  //w = 87
+
+
 if (myEvent.keyCode == 65){ document.getElementById('myImage02').style.left = 
     parseInt(document.getElementById('myImage02').style.left) - 5 + 'px' 
      document.getElementById('myImage02').style.transform= 'rotate(180deg)'
 }  //a = 65
+
+
 if (myEvent.keyCode == 83){ document.getElementById('myImage02').style.top = 
     parseInt(document.getElementById('myImage02').style.top) + 5 + 'px' 
      document.getElementById('myImage02').style.transform= 'rotate(90deg)'
 }  //s = 83
+
+
 if (myEvent.keyCode == 68){ document.getElementById('myImage02').style.left = 
     parseInt(document.getElementById('myImage02').style.left) + 5 + 'px' 
      document.getElementById('myImage02').style.transform= 'rotate(0deg)'
 }  //d = 68
+
+
 }
 </script>
 
