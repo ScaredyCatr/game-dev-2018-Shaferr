@@ -1,1 +1,34 @@
-asd
+<h2 align=center> 2D Arrays by Shane</h2>
+
+<div id="myDiv01" >...</div>
+
+<input type=button value="Generate 2D array" onclick="{
+  
+   document.getElementById('myDiv01').innerHTML = ''
+
+  let myChart = []
+  myChart[0]  = []
+  myChart[1]  = []
+  myChart[2]  = []
+
+
+  myChart[0][0] = 3
+
+  myChart[0][1] = 6
+
+  myChart[1][0] = 9
+
+  myChart[1][1] = 12
+
+  myChart[2][0] = 15
+
+   document.getElementById('myDiv01').innerHTML += `
+    <table border=1>
+    <tr><td>   ${myChart[0][0]} </td><td>       </td>  </tr>
+    <tr><td>   ${myChart[0][1]} </td><td>       </td>  </tr>
+    <tr><td>   ${myChart[1][0]} </td><td>       </td>  </tr>
+    <tr><td>   ${myChart[1][1]} </td><td>       </td>  </tr>
+    <tr2><td>   ${myChart[2][0]} </td><td>       </td>  </tr2>
+    </table>`
+
+}">
