@@ -9,14 +9,18 @@ onclick="{
 
       x = document.getElementById('myIn').value
 
-      if ( x >= 2){
+      if ( x < 3){
         document.getElementById('myOut').innerHTML +=
-              'Its 3<br>'
+              'Its less than 3<br>'
 } 
 
-     if ( x <= -3){
+     if ( x < -3){
         document.getElementById('myOut').innerHTML +=
-              'wow the number is less than -3<br>'
+              'The number is less than -3<br>'
+}
+  if ( x > 3){
+        document.getElementById('myOut').innerHTML +=
+              'The number is greater than 3<br>'
 }
 
 
