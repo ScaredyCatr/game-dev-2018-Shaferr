@@ -1,0 +1,48 @@
+<h1>Same as yesterday except prove you can use the math methods</h1>
+
+<input id="myIn" type=text value="8.5">
+
+<input type=button value="Math.sqrt(Square Root)" onclick="{
+
+  document.getElementById('myOut').innerHTML = 
+     Math.sqrt(parseFloat(document.getElementById('myIn').value))
+
+}">
+
+<input type=button value="Math.abs(Absolute)" onclick="{
+
+  document.getElementById('myOut').innerHTML = 
+      Math.abs(parseFloat(document.getElementById('myIn').value))
+
+}">
+
+<input type=button value="Math.round(Round to nearest Integer)" onclick="{
+
+  document.getElementById('myOut').innerHTML = 
+      Math.round(parseFloat(document.getElementById('myIn').value))
+
+}">
+
+<input type=button value="Math.ceil(Rounded Up)" onclick="{
+
+  document.getElementById('myOut').innerHTML = 
+      Math.ceil(parseFloat(document.getElementById('myIn').value))
+
+}">
+
+<input type=button value="Math.floor(Rounded Down)" onclick="{
+
+  document.getElementById('myOut').innerHTML = 
+      Math.floor(parseFloat(document.getElementById('myIn').value))
+
+}">
+
+<input type=button value="Math.cos(Cosine Value)" onclick="{
+
+  document.getElementById('myOut').innerHTML = 
+      Math.cos(parseFloat(document.getElementById('myIn').value))
+
+}">
+
+<div id="myOut">...</div><br>
+
