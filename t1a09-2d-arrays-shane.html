@@ -16,19 +16,29 @@
 
   myChart[0][1] = 6
 
-  myChart[1][0] = 9
+  myChart[0][2] = 9
 
-  myChart[1][1] = 12
+  myChart[1][0] = 12
 
-  myChart[2][0] = 15
+  myChart[1][1] = 15
+
+  myChart[1][2] = 18
+
+  myChart[2][0] = 21
+
+  myChart[2][1] = 24
+
+  myChart[2][2] = 27
+
+  myChart[3][0] = 30
 
    document.getElementById('myDiv01').innerHTML += `
     <table border=1>
-    <tr><td>   ${myChart[0][0]} </td><td>       </td>  </tr>
-    <tr><td>   ${myChart[0][1]} </td><td>       </td>  </tr>
-    <tr><td>   ${myChart[1][0]} </td><td>       </td>  </tr>
-    <tr><td>   ${myChart[1][1]} </td><td>       </td>  </tr>
-    <tr><td>   ${myChart[2][0]} </td><td>       </td>  </tr2>
+    <tr><td>   ${myChart[0][0]} </td><td> ${myChart[0][1]}  </td><td> ${myChart[0][2]} </tr>
+    <tr><td>   ${myChart[1][0]} </td><td> ${myChart[1][1]}  </td><td> ${myChart[1][2]} </tr>
+    <tr><td>   ${myChart[2][0]} </td><td> ${myChart[2][1]}  </td><td> ${myChart[2][2]} </tr>
+    <tr><td>                    </td><td>                   </td><td>  </tr>
+    <tr><td>                    </td><td>                   </td><td>  </tr>
     </table>`
 
 }">
