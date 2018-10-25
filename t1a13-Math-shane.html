@@ -1,6 +1,6 @@
 <h1>Same as yesterday except prove you can use the math methods</h1>
 
-<input id="myIn" type=text value="8.5">
+<input id="myIn" type=text value="30.2">
 
 <input type=button value="Math.sqrt(Square Root)" onclick="{
 
@@ -37,12 +37,42 @@
 
 }">
 
-<input type=button value="Math.cos(Cosine Value)" onclick="{
+<input type=button value="Math.cos(Cosine Value in deg)" onclick="{
 
   document.getElementById('myOut').innerHTML = 
-      Math.cos(parseFloat(document.getElementById('myIn').value))
+      Math.cos(parseFloat(document.getElementById('myIn').value * Math.PI / 180))
+
+}">
+
+
+<input type=button value="Math.random(Random number between 0 and 1)" onclick="{
+
+  document.getElementById('myOut').innerHTML = 
+      Math.random(parseFloat(document.getElementById('myIn').value))
 
 }">
 
 <div id="myOut">...</div><br>
+
+<br> 
+
+<br>
+
+ <input id="myIn1" type=text value="4,2">
+
+<input type=button value="Math.max(Highest value in a list)" onclick="{
+
+  document.getElementById('myOut1').innerHTML = 
+      Math.max(parseFloat(document.getElementById('myIn1').value))
+
+}">
+
+<input type=button value="Math.pow(Power Of)" onclick="{
+
+  document.getElementById('myOut1').innerHTML = 
+      Math.pow(parseFloat(document.getElementById('myIn1').value))
+
+}">
+
+<div id="myOut1">...</div><br>
 
