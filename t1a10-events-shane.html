@@ -14,7 +14,6 @@ function checkKey(event){
    document.getElementById('myDiv01').style.top = myY
 }
 
-
 </script>
 
 <h2 align=center> Tons of Events by Shane</h2>
@@ -35,14 +34,18 @@ function checkKey(event){
 <div id="myOutput01">...</div><br><br>
 
 <div id="myDiv01"  style="background:pink; width:90; height:60; float:left" onMouseUp="{
-    document.getElementById('myOutput02').innerHTML = 'Single click event activated'
-}">Release mouse button over this</div>
+    document.getElementById('myOutput03').innerHTML = 'Single click event activated'
+}">Release mouse button over this div</div>
 
-<div id="myOutput02">...</div><br><br>
+<div id="myOutput03">...</div><br><br>
 
 <br>
 
 <input type=text value="Change me" onChange="{
     document.getElementById('myOutput02').innerHTML = 
      'You changed the text to: ' + this.value 
+
+
+
+
 }">

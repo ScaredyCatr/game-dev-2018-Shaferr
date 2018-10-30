@@ -16,17 +16,17 @@ function myFun(myIn){
 }">
 <div id="myOut"></div><br> 
 
+<input id="myFunction" type=text value="Shane Fer">
+<input type=button value="Functions with arguments"
+<button onclick="myFunction('Shane Ferguson','Student')"></button>
+
+<p id="Function with arguments"></p>
 
 <script>
-function myFun1(myIn1){
-   return myIn1 + '<br>'
+function myFunction(name,job) {
+    document.getElementById("Function with arguments").innerHTML =
+    "Welcome " + name + ", the " + job + ".";
 }
 </script>
 
-<input id="myIn" type=text value="Hello">
-<input type=button value="myFun1('Hello')" onclick="{
- myFun1('Hi')
-  document.getElementById('myOut1').innerHTML += myFun1('Hello')
-
-}">
 <div id="myOut1"></div><br>

@@ -1,0 +1,46 @@
+<h2 align=center> If Else Statements by Shane</h2>
+
+<input id="myIn" type=text value=2>
+
+<input type=button value="decision if statement" 
+onclick="{
+ document.getElementById('myOut').innerHTML = `` 
+
+      x = document.getElementById('myIn').value
+
+      if (document.getElementById('myIn').value <= 3){
+        document.getElementById('myOut').innerHTML +=
+              'Its less than or equal to 3<br>'
+      } else {
+ 
+       document.getElementById('myOut').innerHTML +=
+              'Its greater than 3<br>'
+      }
+                      
+                       x = document.getElementById('myIn').value
+
+                       if ((x >= 10) && (x < 15)) {
+                        document.getElementById('myOut').innerHTML +=
+                              'Its greater than or equal to 10 and less than 15<br>'
+                       } else {
+ 
+                       document.getElementById('myOut').innerHTML +=
+                            'its less than 10 or greater than 15<br>'
+                       }
+
+ 
+      if ((x >= 20) && (x < 25)) {
+        document.getElementById('myOut').innerHTML +=
+              'Its greater than or equal to 20 and less than 25<br>'
+      } else {
+ 
+      document.getElementById('myOut').innerHTML +=
+              'It's less than 20 or greater than 25<br>'
+      }
+
+}">
+
+<div id="myOut">...</div>
+
+
+
