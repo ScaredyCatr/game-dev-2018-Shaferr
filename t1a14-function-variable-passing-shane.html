@@ -16,9 +16,9 @@ function myFun(myIn){
 }">
 <div id="myOut"></div><br> 
 
-<input id="myFunction" type=text value="Shane Ferguson">
+<input id="myText1" type=text value='Ferguson,Student'>
 <input type=button value="Functions with arguments"
-<button onclick="myFunction('Shane Ferguson','Student')"></button>
+<button onclick="myFunction("myText1")"></button>
 
 <p id="Function with arguments"></p>
 
@@ -26,6 +26,7 @@ function myFun(myIn){
 function myFunction(name,job) {
     document.getElementById("Function with arguments").innerHTML =
     "Welcome " + name + ", the " + job + ".";
+
 }
 </script>
 
