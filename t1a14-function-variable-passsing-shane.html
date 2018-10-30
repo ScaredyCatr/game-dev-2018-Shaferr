@@ -1,0 +1,32 @@
+<h1>Passing to functions</h1>
+<script>
+function myFun(myIn){
+  return myIn + '<br>'
+}
+
+
+</script>
+<input id="myIn" type=text value="Hi">
+
+<input type=button value="myFun('Hi')" onclick="{
+ myFun('Hi')
+  document.getElementById('myOut').innerHTML += myFun('Hi')
+
+
+}">
+<div id="myOut"></div><br> 
+
+<input id="myFunction" type=text value="Shane Ferguson">
+<input type=button value="Functions with arguments"
+<button onclick="myFunction('Shane Ferguson','Student')"></button>
+
+<p id="Function with arguments"></p>
+
+<script>
+function myFunction(name,job) {
+    document.getElementById("Function with arguments").innerHTML =
+    "Welcome " + name + ", the " + job + ".";
+}
+</script>
+
+<div id="myOut1"></div><br>
