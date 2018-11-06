@@ -4,11 +4,12 @@
 
 <input type=text id="myNameInput" placeholder="Enter an animal name here" value="">
 <input type=text id="myAgeInput" placeholder="Enter an animals age here" value="">
+<input type=text id="myAgeInput" placeholder="Enter an animals breed here" value="">
 
 <input id="myButton130" type="button" value="Make and Show the class myAnimal" onclick="{
                                                                                  
  class myAnimal {
-    constructor(passName, passAge) {
+    constructor(passName, passAge, passBreed) {
        this.myNameInput = passName;
        this.myAgeInput = passAge;
     }
@@ -19,12 +20,12 @@
 
  }  // end class myAnimal
                                                              
-   
                                                                                  
    myDog = new myAnimal(document.getElementById('myNameInput').value, document.getElementById('myAgeInput').value)
    myDog.myShow()      
 
                                                  
 }"><br><br>
+
 
 <div id='myDiv130'>...</div><br>
