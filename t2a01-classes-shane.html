@@ -3,7 +3,7 @@
 
 <input type=text id="myNameInput" placeholder="Enter an animal name here" value="">
 <input type=text id="myAgeInput" placeholder="Enter an animals age here" value="">
-<input type=text id="myBreedInput" placeholder="Enter an animals breed here" value="">
+<input type=text id="myBreedInput" placeholder="Enter an animal here" value="">
 
 <input id="myButton130" type="button" value="Make and Show the class myAnimal" onclick="{
                                                                                  
@@ -14,7 +14,7 @@
        this.myBreedInput = passBreed;
     }
     myShow(){    
-       document.getElementById('myDiv130').innerHTML = 'Hello '+ this.myNameInput + '. You are ' + this.myAgeInput + ' years old. Your Breed is a '+
+       document.getElementById('myDiv130').innerHTML = 'Hello '+ this.myNameInput + '. You are ' + this.myAgeInput + ' years old. Your animal is a '+
  this.myBreedInput + ' <br>'
     }
  }  // end class myAnimal
