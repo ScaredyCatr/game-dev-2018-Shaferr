@@ -1,20 +1,32 @@
 <h1 align=center ><font color="pink"> T2A04 - Move Background - Shane </font></h1>
 
-<body id="myBody" style="background-repeat:no-repeat;
-background-size: 100%" background=
-"https://avatars.mds.yandex.net/get-pdb/69339/4856aa4e-c752-47b2-8978-8199335b4efe/orig">
+<body id="myBody" style="background-repeat: url("https://phaser.io/content/tutorials/coding-tips-003/platform.png");
+background-size: 90%" background=
+"https://wallpapercave.com/wp/wp2324421.jpg">
 
+
+<img id="myImage02" width=40 src="https://cdn.dribbble.com/users/281280/screenshots/4905317/ship_big.gif" 
+    style="position:absolute; width:400px; height:300px;  left:900px; top:100px"> 
 
 <script>
    let myGlobalX = 0
    let myClock
 </script>
 
-<input id="myButton01" type=button value="background move right" onclick="{
-   myTemp = '100px 0px'
+<input id="myButton01" type=button value="background move left" onclick="{
+  myTemp = '100px 0px'
   myGlobalX += 5
   myTemp = myGlobalX + 'px 0px'
   //myTemp = '0px '+ myGlobalX + 'px'  (moves down only)
+  document.getElementById('myBody').style.backgroundPosition =myTemp
+  
+}">
+
+<input id="myButton02" type=button value="background move right" onclick="{
+   myTemp = '100px 0px'
+  myGlobalX -= 5
+  myTemp = myGlobalX + 'px 0px'
+  //myTemp = '0px '+ myGlobalX + 'px'  (moves left only)
   document.getElementById('myBody').style.backgroundPosition =myTemp
   
 }">
