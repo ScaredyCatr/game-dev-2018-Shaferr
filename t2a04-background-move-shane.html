@@ -11,6 +11,7 @@ background-size: 90%" background=
 <script>
    let myGlobalX = 0
    let myClock
+   let myClock1
 </script>
 
 <input id="myButton01" type=button value="background move left" onclick="{
@@ -38,4 +39,22 @@ background-size: 90%" background=
    }, 100)
 
 }">   
+
+<input id="myButton03" type=button value="image move left" onclick="{
+document.getElementById('myImage02').style.left = 
+    parseInt(document.getElementById('myImage02').style.left) - 5 + 'px'
+       document.getElementById('myImage02').style
+
+
+}">
+
+<input type=button value="Auto Image" onclick="{
+  clearInterval(myClock1)
+  myClock1 = setInterval(function(){
+    document.getElementById('myButton03').click()
+   }, 110)
+
+}">  
+
+
 
