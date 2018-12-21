@@ -37,11 +37,12 @@ Score: <input id="myScore" type=number value=0><br>
     console.log('up start')
    document.getElementById('myDiv01').innerHTML = '...'
    document.getElementById('myImage01').style.top = 
-     parseInt(document.getElementById('myImage01').style.top) - 5 + 'px'
+     parseInt(document.getElementById('myImage01').style.top) - 10 + 'px'
    if (myHitOther('myImage01','myImage02')){
          document.getElementById('myImage01').style.top ='200px'
          document.getElementById('myDiv01').innerHTML = 'Ouch'
-         document.getElementById('myScore').value = parseInt(document.getElementById('myScore').value) + 200
+         document.getElementById('myScore').value = 
+         parseInt(document.getElementById('myScore').value) + 1
    }
    console.log('up end')
 }">
