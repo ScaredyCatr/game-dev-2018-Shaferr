@@ -1,4 +1,4 @@
- 	  <h3 align=center > t2a07-auto-random-collide by Fred</h3>
+<h3 align=center > t2a06-auto-random-collide Shane</h3>
 
 <script>
 
@@ -27,11 +27,11 @@ let myClock2
 
 <div id="myDiv01">...</div>
 
-<img id="myImage01" width=40 src="https://thumbs.gfycat.com/ElementaryAppropriateAssassinbug-small.gif" 
-    style="position:absolute; width:120px; height:170px; left:200px; top:200px">
+<img id="myImage01" width=40 src="http://www.animatedimages.org/data/media/600/animated-rocket-and-space-shuttle-image-0032.gif" 
+    style="position:absolute; width:40px; height:120px; left:200px; top:150px">
 
-<img id="myImage02" width=40 src="https://steamusercontent-a.akamaihd.net/ugc/963091845745085215/4973AC97C73C5AEE971C6FDF855C4D2C224AB0DF/?interpolation=lanczos-none&output-format=jpeg&output-quality=95&fit=inside%7C1024%3A1024&composite-to=*,*%7C1024%3A1024&background-color=black" 
-    style="position:absolute; width:80px; height:70px;  left:200px; top:50px">
+<img id="myImage02" width=40 src="http://www.animatedimages.org/data/media/33/animated-alien-and-extraterrestrial-image-0163.gif" 
+    style="position:absolute; width:40px; height:40px;  left:200px; top:50px">
 
 <input type=button value="Up" onclick="{
    clearInterval(myClock)
@@ -47,9 +47,9 @@ let myClock2
 <input type=button value="Random" onclick="{
    clearInterval(myClock2)
    myClock2 = setInterval(function(){
-     myRan = Math.round(Math.random()*50)-30   // yo make this random
-     document.getElementById('myImage02').style.left = parseInt(document.getElementById('myImage02').style.left) + myRan + 'px'
-     document.getElementById('myImage02').style.top = parseInt(document.getElementById('myImage02').style.top) + myRan + 'px'
+     myRan = Math.round(Math.random()*50)-30  // yo make this random
+     document.getElementById('myImage02').style.left = parseInt(document.getElementById('myImage02').style.left) - myRan + 'px'
+     document.getElementById('myImage02').style.top = parseInt(document.getElementById('myImage02').style.top) - myRan + 'px'
   }, 200)
 }">
 
