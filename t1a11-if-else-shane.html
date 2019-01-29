@@ -17,7 +17,7 @@ onclick="{
               'Its greater than 3<br>'
       }
                       
-                       x = document.getElementById('myIn').value
+                       x = document.getElementById('myOut').value
 
                        if ((x >= 10) && (x < 15)) {
                         document.getElementById('myOut').innerHTML +=
@@ -27,7 +27,15 @@ onclick="{
                        document.getElementById('myOut').innerHTML +=
                             'its less than 10 or greater than 15<br>'
                        }
+ if (x % 2 == 0) {
 
+      document.getElementById('myIn').innerHTML +=
+         `<font color=green>Even number, </font>`
+} else {
+
+ document.getElementById('myOut').innerHTML +=
+         `<font color=red>Odd number, </font>`
+}
 
 
 }">

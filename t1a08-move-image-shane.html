@@ -1,7 +1,6 @@
-
 <h3 align=center > My Moving images by Shane</h3>
 
-<body background="http://zero-k.info/Resources/pacman.heightmap.jpg">
+<body background="https://previews.123rf.com/images/stillfx/stillfx1510/stillfx151000294/46994600-circles-and-stars-yellow-abstract-background.jpg">
   
 <body text="red">
 
@@ -30,72 +29,55 @@ function checkKey(myEvent) {
    document.getElementById('myDiv01').innerHTML = 'seconds: ' + myDuration +
 ', keyCode: '+myEvent.keyCode
  
-
 if (myDuration == 60){
     alert("Pacman Wins!")
 }
   
-
 if (myHitOther('myImage01','myImage02')){
        alert("Ghost Wins!")
+       document.getElementById('myImage02').style.display = 'none';  
 }
   
-
 if (myEvent.keyCode == 38){ document.getElementById('myImage01').style.top = 
        parseInt(document.getElementById('myImage01').style.top) - 5 + 'px'
           document.getElementById('myImage01').style.transform= 'rotate(90deg)'  
 }  //up arrow = 38
-
-
 if (myEvent.keyCode == 37){ document.getElementById('myImage01').style.left = 
       parseInt(document.getElementById('myImage01').style.left) - 5 + 'px' 
           document.getElementById('myImage01').style.transform= 'rotate(0deg)'
 }  // left arrow= 37
-
-
 if (myEvent.keyCode == 40){ document.getElementById('myImage01').style.top = 
     parseInt(document.getElementById('myImage01').style.top) + 5 + 'px' 
           document.getElementById('myImage01').style.transform= 'rotate(-90deg)'
 }  //down arrow 40
      
-
 if (myEvent.keyCode == 39){ document.getElementById('myImage01').style.left = 
     parseInt(document.getElementById('myImage01').style.left) + 5 + 'px'
        document.getElementById('myImage01').style.transform= 'rotate(180deg)'
 }  //right arrow= 39
-
-
 if (myEvent.keyCode == 87){ document.getElementById('myImage02').style.top = 
     parseInt(document.getElementById('myImage02').style.top) - 5 + 'px' 
     document.getElementById('myImage02').style.transform= 'rotate(-90deg)'
 }  //w = 87
-
-
 if (myEvent.keyCode == 65){ document.getElementById('myImage02').style.left = 
     parseInt(document.getElementById('myImage02').style.left) - 5 + 'px' 
      document.getElementById('myImage02').style.transform= 'rotate(180deg)'
 }  //a = 65
-
-
 if (myEvent.keyCode == 83){ document.getElementById('myImage02').style.top = 
     parseInt(document.getElementById('myImage02').style.top) + 5 + 'px' 
      document.getElementById('myImage02').style.transform= 'rotate(90deg)'
 }  //s = 83
-
-
 if (myEvent.keyCode == 68){ document.getElementById('myImage02').style.left = 
     parseInt(document.getElementById('myImage02').style.left) + 5 + 'px' 
      document.getElementById('myImage02').style.transform= 'rotate(0deg)'
 }  //d = 68
-
-
 }
 </script>
 
 
 <div id="myDiv01">...</div>
 
-<img id="myImage01" width=40 src="https://lh3.ggpht.com/_CtHVBbyM2AQ/TY_frtWJzHI/AAAAAAAASsk/R0DR85DG2CU/s740/32556382.gif" 
+<img id="myImage01" width=40 src="https://i.pinimg.com/originals/d8/bc/a3/d8bca3a863609bffc8630c9892d3a600.png" 
     style="position:absolute; width:70px; height:80px; left:200px; top:150px">
 
 <img id="myImage02" width=70 src="https://orig00.deviantart.net/0409/f/2014/260/2/c/running__2__by_lisnovski-d7zjrl2.gif" 
@@ -109,6 +91,5 @@ if (myEvent.keyCode == 68){ document.getElementById('myImage02').style.left =
        alert()
    }
    console.log('up end')
-
 </body>
 }">

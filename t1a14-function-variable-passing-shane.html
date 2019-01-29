@@ -14,20 +14,23 @@ function myFun(myIn){
 
 
 }">
+
 <div id="myOut"></div><br> 
 
-<input id="myText1" type=text value='Ferguson,Student'>
-<input type=button value="Functions"
-<button onclick="myFunction("myText1")"></button>
-
-<p id="Function with arguments"></p>
-
 <script>
-function myFunction(name,job) {
-    document.getElementById("Function with arguments").innerHTML =
-    "Welcome " + name + ", the " + job + ".";
-
+function myFun(myIn){
+  return myIn + '<br>'
 }
+
+
 </script>
+<input id="myIn" type=text value="Mouse">
+
+<input type=button value="myFun('Hi')" onclick="{
+ myFun('Hi')
+  document.getElementById('myOut1').innerHTML += myFun('He')
+
+
+}">
 
 <div id="myOut1"></div><br>
