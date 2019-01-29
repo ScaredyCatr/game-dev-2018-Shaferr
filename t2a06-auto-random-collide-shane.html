@@ -38,7 +38,37 @@ let myClock2
    myClock = setInterval(function(){
      document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) - 10 + 'px'
      if (myHitOther('myImage01','myImage02')){         
-         document.getElementById('myImage01').style.top = '200px'
+         document.getElementById('myImage01').style.top = '230px'
+     }
+  }, 200)
+}">
+
+<input type=button value="Down" onclick="{
+   clearInterval(myClock)
+   myClock = setInterval(function(){
+     document.getElementById('myImage01').style.top = parseInt(document.getElementById('myImage01').style.top) + 10 + 'px'
+     if (myHitOther('myImage01','myImage02')){         
+         document.getElementById('myImage01').style.top = '230px'
+     }
+  }, 200)
+}">
+
+<input type=button value="Left" onclick="{
+   clearInterval(myClock)
+   myClock = setInterval(function(){
+     document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 10 + 'px'
+     if (myHitOther('myImage01','myImage02')){         
+         document.getElementById('myImage01').style.left = '230px'
+     }
+  }, 200)
+}">
+
+<input type=button value="Right" onclick="{
+   clearInterval(myClock)
+   myClock = setInterval(function(){
+     document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10 + 'px'
+     if (myHitOther('myImage01','myImage02')){         
+         document.getElementById('myImage01').style.left = '230px'
      }
   }, 200)
 }">
